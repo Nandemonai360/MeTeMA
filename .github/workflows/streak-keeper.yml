@@ -20,7 +20,7 @@ jobs:
       - run: node index.js
         env:
           DUOLINGO_JWT: ${{ secrets.DUOLINGO_JWT }}
-          LESSONS: 10
+          LESSONS: 250
 
       - uses: christosgalano/delete-workflow-runs@v1.0.0
         with:
