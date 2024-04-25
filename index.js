@@ -65,7 +65,5 @@ for (let i = 0; i < process.env.LESSONS; i++) {
     },
   ).then(response => response.json())
 
-  console.log({
-    xp: response.xpGain
-  })
+  console.log(`🎉 You won ${xp} XP`);
 }
