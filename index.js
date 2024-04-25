@@ -54,7 +54,7 @@ for (let i = 0; i < process.env.LESSONS; i++) {
         ...session,
         heartsLeft: 0,
         startTime: (+new Date() - 60000) / 1000,
-        enableBonusPoints: false,
+        enableBonusPoints: true,
         endTime: +new Date() / 1000,
         failed: false,
         maxInLessonStreak: 9,
