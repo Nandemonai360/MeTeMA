@@ -17,7 +17,7 @@ const SESSION_PAYLOAD = {
   "levelIndex": 0,
   "showGrammarSkillSplash": false,
   "skillId": "060ce4633b12e01d03c5baa22fddd7ab",
-  "type": "SKILL_PRACTICE",
+  "type": "GLOBAL_PRACTICE",
   "levelSessionIndex": 0
 };
 
