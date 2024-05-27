@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       lessons:
-        default: 1
+        default: echo "::set-output name=delay::$((RANDOM % 50))"
         description: 'Number of lessons to be done'
         required: false
         type: number
@@ -22,7 +22,7 @@ jobs:
       - run: node index.js
         env:
           DUOLINGO_JWT: ${{ secrets.DUOLINGO_JWT }}
-          LESSONS: echo "::set-output name=delay::$((RANDOM % 50))"
+          LESSONS: ${{ inputs.lessons }}
 
       - name: Remove expired workflow runs
         uses: c-hive/gha-remove-artifacts@v1
