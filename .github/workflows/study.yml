@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       lessons:
-        default: echo "::set-output name=delay::$((RANDOM % 50))"
+        default: 1
         description: 'Number of lessons to be done'
         required: false
         type: number
