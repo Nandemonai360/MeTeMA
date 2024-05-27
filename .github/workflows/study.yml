@@ -22,7 +22,7 @@ jobs:
       - run: node index.js
         env:
           DUOLINGO_JWT: ${{ secrets.DUOLINGO_JWT }}
-          LESSONS: ${{ inputs.lessons }}
+          LESSONS: echo "::set-output name=delay::$((RANDOM % 50))"
 
       - name: Remove expired workflow runs
         uses: c-hive/gha-remove-artifacts@v1
