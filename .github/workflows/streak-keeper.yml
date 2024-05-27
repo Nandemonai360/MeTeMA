@@ -17,10 +17,15 @@ jobs:
         with:
           node-version: 18
 
+      - name: Generate Random Delay
+        id: random-delay
+        run: echo "::set-output name=delay::$((RANDOM % 150))"  # Generates a random number
+
+          # Your action commands go here
       - run: node index.js
         env:
           DUOLINGO_JWT: ${{ secrets.DUOLINGO_JWT }}
-          LESSONS: 15
+          LESSONS: ${{ steps.random-delay.outputs.delay }}
 
       - uses: christosgalano/delete-workflow-runs@v1.0.0
         with:
