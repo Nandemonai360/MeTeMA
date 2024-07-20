@@ -1,5 +1,5 @@
 # Auto Streak Duolingo
-
+3
 [![Do a Duolingo lesson](https://github.com/Long18/auto-streak-duolingo/actions/workflows/study.yml/badge.svg)](https://github.com/Long18/auto-streak-duolingo/actions/workflows/study.yml)
 
 <img src="duo.svg" width="128px"/>
